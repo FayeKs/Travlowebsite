@@ -1,9 +1,18 @@
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className='text-center font-bold bg-slate-600'>App</div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        
+      </Routes>
+    </Router>
   )
+
 }
 
 export default App
