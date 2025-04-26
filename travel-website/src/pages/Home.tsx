@@ -1,5 +1,6 @@
 import hero from '../assets/images/hero.jpg'
 import TopDestinations from '../components/TopDestinations'
+import HiddenWonders from '../components/HiddenWonders'
 
 const Home = () => {
   return (
@@ -9,11 +10,12 @@ const Home = () => {
           <h1 className='text-4xl md:text-5xl font-bold text-white mb-4'> Discover new adventures with us </h1>
           <p className='text-lg md:text-2xl text-white mb-8'>Explore amazing places at exclusive deals</p>
           <button className='border text-white px-5 py-1 rounded-full text-lg md:text-xl
-          hover:bg-gray-500 transform 
+          hover:bg-teal-900 transform 
           translation duration-300 hover:scale-105'>Explore Now</button>
         </div>
       </div>
       <TopDestinations/>
+      <HiddenWonders/>
     </>
   )
 }

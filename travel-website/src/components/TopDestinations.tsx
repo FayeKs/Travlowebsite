@@ -10,22 +10,22 @@ const TopDestinations = () => {
         {
             image:  amalfi,
             title: 'Amalfi Coast, Italy',
-            description: ''
+            description: 'A stunning seaside gem on Italy’s southern coast, Amalfi charms with its colorful cliffside villages, crystal-clear waters, and rich Mediterranean culture.'
         },
         {
             image: nyc,
             title: 'New York, USA',
-            description:''
+            description:'The city that never sleeps — NYC pulses with energy, iconic landmarks, world-class dining, and endless entertainment in every neighborhood.'
         },
         {
             image: london,
             title: 'London, England',
-            description: ''
+            description: 'A perfect mix of history and modern flair, London offers royal palaces, cozy pubs, cutting-edge fashion, and global cuisine all in one city.'
         },
         {
             image: tokyo,
             title: 'Tokyo, Japan',
-            description: ''
+            description: 'Where ancient tradition meets futuristic innovation — Tokyo dazzles with neon-lit streets, serene temples, and an unforgettable food scene.'
         }
     ]
   return (
@@ -39,7 +39,7 @@ const TopDestinations = () => {
                     <img src={city.image} alt="" className='w-full h-48 object-cover transform transition duration-300 hover:scale-110'/>  
                     <div className='p-4'>
                         <h3 className='text-xl font-bold mb-2'>{city.title}</h3>
-                        <p>{city.description}</p>
+                        <p className='text-sm'>{city.description}</p>
                     </div>
                 </div>
             ))}

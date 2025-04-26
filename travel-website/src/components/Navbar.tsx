@@ -7,12 +7,12 @@ const Navbar = () => {
   return (
     <nav className='fixed m-4 top-0 right-0 left-0 shadow-lg z-50 bg-white'>
       <div className='container px-4 flex justify-between items-center h-12'>
-        <h3 className='text-2xl font-bold'>Travlo</h3>
+        <h3 className='text-2xl font-bold text-teal-900'>Travlo</h3>
         <div className='hidden md:flex space-x-4 text-sm  items-center'>
-          <Link to="/" className='px-4 py-2 hover:bg-gray-600 hover:text-white' >Home</Link>
-          <Link to="" className='px-4 py-2 hover:bg-gray-600 hover:text-white'>Contact</Link>
-          <Link to="" className='px-4 py-2 hover:bg-gray-600 hover:text-white'>About</Link>
-          <button className='py-2 px-6 border bg-gray-300'>Login</button>
+          <Link to="/" className='px-4 py-2 hover:bg-teal-900 hover:text-white' >Home</Link>
+          <Link to="" className='px-4 py-2 hover:bg-teal-900 hover:text-white'>Contact</Link>
+          <Link to="" className='px-4 py-2 hover:bg-teal-900 hover:text-white'>About</Link>
+          <button className='py-2 px-6 border bg-teal-900 text-white'>Login</button>
         </div>
         <div className='md:hidden'>
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -23,10 +23,10 @@ const Navbar = () => {
       <div>
     {isOpen && (
       <div className='md:hidden flex space-y-6 py-4 flex-col bg-white items-center'>
-      <Link to="/" className='px-4 py-2 hover:bg-gray-600 hover:text-white' >Home</Link>
-      <Link to="" className='px-4 py-2 hover:bg-gray-600 hover:text-white'>Contact</Link>
-      <Link to="" className='px-4 py-2 hover:bg-gray-600 hover:text-white'>About</Link>
-      <button className='py-2 px-6 border bg-gray-300'>Login</button>
+      <Link to="/" className='px-4 py-2 hover:bg-teal-900 hover:text-white' >Home</Link>
+      <Link to="" className='px-4 py-2 hover:bg-teal-900 hover:text-white'>Contact</Link>
+      <Link to="" className='px-4 py-2 hover:bg-teal-900 hover:text-white'>About</Link>
+      <button className='py-2 px-6 border bg-teal-900 text-white'>Login</button>
     </div>
     )}
       </div>
