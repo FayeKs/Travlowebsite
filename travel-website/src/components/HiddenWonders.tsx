@@ -1,4 +1,4 @@
-import hidden from '../assets/images/hidden.jpg'
+
 
 const HiddenWonders = () => {
   return (
