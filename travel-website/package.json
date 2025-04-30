@@ -1,7 +1,7 @@
 {
   "name": "travel-website",
   "private": true,
-  "homepage": "https://fayeks.github.io/Travlo/",
+  "homepage": "https://fayeks.github.io/Travlo",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
